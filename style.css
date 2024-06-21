@@ -87,6 +87,7 @@ section {
   letter-spacing: 0.5rem;
   font-weight: 600;
   outline: none;
+  border: none;
 }
 .home-content > p {
   margin-top: 2rem;
