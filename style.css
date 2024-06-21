@@ -75,7 +75,8 @@ section {
 .social-media > a,
 .about-info span,
 .skills span,
-.skills-box i {
+.skills-box i,
+.projects span {
   color: var(--main-color);
 }
 
@@ -157,24 +158,71 @@ section {
   padding-top: 7rem;
   padding-bottom: 6rem;
 }
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 .skills-box i {
   font-size: 5rem;
   font-weight: 400;
 }
-
+.skills h2 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: var(--text-color);
+  text-align: center;
+}
 .skills-box h3 {
   font-size: 2rem;
 }
 .skills-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   border: 0.2rem solid var(--bg-color);
   border-radius: 2rem;
   padding: 1rem;
   background-color: var(--bg-color);
+  flex: 1 1 20%;
 }
 .skills-box:hover {
   box-shadow: 0 0 1rem var(--main-color);
+  transition: all 1s ease-in-out;
+}
+.projects {
+  background-color: var(--bg-color);
+}
+.projects h2 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: var(--text-color);
+  text-align: center;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.fa-circle-up {
+  background-color: var(--main-color);
+  font-size: 2.4rem;
+  color: var(--bg-color);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem var(--main-color);
+  margin-top: 2rem;
+}
+.fa-circle-up:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2rem var(--main-color);
   transition: all 1s ease-in-out;
 }
