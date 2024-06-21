@@ -92,6 +92,14 @@ section {
   outline: none;
   border: none;
 }
+.btn:hover {
+  cursor: pointer;
+}
+.social-media > a :hover {
+  cursor: pointer;
+  box-shadow: 0 0 1rem var(--main-color);
+  border-radius: 50%;
+}
 .home-content > p {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -146,6 +154,8 @@ section {
   background-color: var(--second-bg-color);
   color: var(--text-color);
   text-align: center;
+  padding-top: 7rem;
+  padding-bottom: 6rem;
 }
 .skills-box i {
   font-size: 5rem;
@@ -154,4 +164,17 @@ section {
 
 .skills-box h3 {
   font-size: 2rem;
+}
+.skills-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.2rem solid var(--bg-color);
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: var(--bg-color);
+}
+.skills-box:hover {
+  box-shadow: 0 0 1rem var(--main-color);
+  transition: all 1s ease-in-out;
 }
