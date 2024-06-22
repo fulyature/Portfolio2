@@ -203,7 +203,6 @@ section {
 }
 .img-box img {
   border-radius: 2rem;
-  padding: 1rem;
 }
 .projects h2 {
   padding-top: 6rem;
@@ -213,8 +212,7 @@ section {
   color: var(--text-color);
   text-align: center;
 }
-.img-box {
-}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -238,4 +236,24 @@ footer {
   cursor: pointer;
   box-shadow: 0 0 2rem var(--main-color);
   transition: all 1s ease-in-out;
+}
+.pro {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  transform: translateY(100%);
+  transition: all 2s;
+}
+.pro a {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+.img-box {
+  overflow: hidden;
+  position: relative;
+}
+.img-box:hover .pro {
+  transform: translateY(0);
 }
